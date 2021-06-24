@@ -1,0 +1,48 @@
+.wrapper {
+  margin: 0 auto;
+  border: 2px solid palevioletred;
+  border-radius: 1rem;
+  max-width: 15rem;
+  height: 25rem;
+  text-align: center;
+  overflow: auto;
+  .list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    overflow: auto;
+    li {
+      border: 1px solid palevioletred;
+      border-radius: 1rem;
+      margin-top: 2rem;
+      i {
+        margin-right: 1rem;
+        color: plum;
+      }
+      span {
+        display: none;
+        opacity: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s linear;
+      }
+    }
+    li:hover {
+      transform: translateY(-3px);
+      span {
+        display: inline-block;
+        opacity: 1;
+      }
+    }
+    .checked {
+      text-decoration: line-through;
+    }
+  }
+  .add-btn {
+    color: green;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+// * {
+//   outline: 2px solid green;
+// }
